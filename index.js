@@ -8,6 +8,18 @@ let value = 5;
 console.log(value);
 
 
+const box2 = 33;
+
+console.log(box2);
+
+
+
+
+
+
+
+
+
 
 // console.log(1);
 // console.log('hello');
