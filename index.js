@@ -8,7 +8,7 @@ let value = 5;
 console.log(value);
 
 
-const box2 = 33;
+const box2 = 35;
 
 console.log(box2);
 
