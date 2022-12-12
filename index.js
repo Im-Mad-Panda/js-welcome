@@ -1,28 +1,17 @@
-let box;
-box = 3;
+let step = 0;
 
-console.log(box);
-
-let value = 5;
-
-console.log(value);
+// console.log(++step);
+// console.log(step++);
 
 
-const box2 = 35;
-
-console.log(box2);
+// console.log(--step);
+// console.log(step--);
 
 
 
+// console.log(step);
 
-
-
-
-
-
-
-// console.log(1);
-// console.log('hello');
-// console.log(true);
-// console.log(undefined);
-// console.log(null);
+do {
+    console.log("Hello!")
+    
+}while(++step < 10)
