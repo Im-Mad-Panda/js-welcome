@@ -1,17 +1,14 @@
-let step = 0;
-
-// console.log(++step);
-// console.log(step++);
+// let a = 'Daniil';
+// let b = 'Obdymko';
 
 
-// console.log(--step);
-// console.log(step--);
+// console.log(a > b);
 
+let age = 15; 
 
+console.log(age > 10 && age < 20);
 
-// console.log(step);
+console.log(age < 10 || age > 20);
 
-do {
-    console.log("Hello!")
-    
-}while(++step < 10)
+console.log(age > 10 || age > 20);
+     
