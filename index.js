@@ -2,33 +2,65 @@
 // prompt - модалка с импутом, куда можно ввести сообщение;
 // confirm - модалка с подтверждением или отменойж
 
-let a = 5;
-let b = 4;
+/*const inputValue1 = Number(prompt('Type first number'));
+const inputValue2 = Number(prompt('Type second number'));
 
-console.log(a * b);
+// let result = inputValue1 + inputValue2;
 
-let c = 10;
-let d = 2;
+// if(isNaN(result)){
+//     alert('not a number');
+// }else {
+//     alert(Number(result));
+// }
 
-console.log(c / d);
+let result;
 
-let e = 55;
-let f = 27;
+if(isNaN(inputValue1 + inputValue2)){
+    result = 'not a number';
+}else {
+    result = inputValue1 + inputValue2;
+}
 
-console.log(e + f);
+alert(result);
+*/
 
-let number = 33;
-let bool = false;
-let str = javascript;
-let strNum = "100";
 
-console.log(number, bool, str, strNum);
+/*function имя_функции(параметры_функции){
+    тело функции
+}
+*/
 
-let num = 1;
-num++;
-num--;
-num += 1;
-num -=1;
-num *= 11;
-num /= 11;
 
+/* Function Declaration:
+function имя_функции(параметры_функции){
+    тело_функции
+}
+
+Function Expression:
+const имя_функции = function (параметры){
+    тело функции
+}
+
+Arrow Function:
+const имя_функции = (параметры) => {тело_функции}
+*/
+
+
+const inputValue1 = Number(prompt('Type first number'));
+const inputValue2 = Number(prompt('Type second number'));
+
+const getSumOfTwo = (Value1, Value2) =>{
+    let result;
+    if (isNaN(Value1) && isNaN(Value2)){
+        result = 'Wrong';
+    } else {
+        result = Value1 + Value2;
+    }
+
+debugger;
+
+    return result;
+}
+
+const results = getSumOfTwo(inputValue1, inputValue2);
+alert(results);
