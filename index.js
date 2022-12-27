@@ -56,39 +56,29 @@ sayHelloTo(userName);
 */
 
 
-// Task 1
-
-const inputValue1 = Number(prompt('Type first number'));
-const inputValue2 = Number(prompt('Type second number'));
-
-const maxValue = function(value1, value2){
-  if(value1 > value2){
-return value1;
-  } else{
-return value2;
-  }
+/*if (условие) {
+  блок кода
+} else {
+  клок кода, который выполниться в противном случае
 }
+*/
 
-const result = maxValue(inputValue1, inputValue2);
-alert(result);
 
-// Task 2
 
-const minValue = function(value1, value2){
-  if(value1 < value2){
-return
-  } else{
-return value2;
-  } 
+const globalVar = 'test';
+
+debugger;
+
+if (globalVar){
+    const localVar = 10;
+    console.log(localVar);
+    console.log(globalVar);
+    console.log('true');
+
+    if (localVar){
+        const innerVar = true;
+    }
+} else {
+console.log('false');
 }
-
-const smaller = minValue(5, 3);
-alert(smaller);
-
-// Task 3
-
-function isEven (value1){
-    return value1 % 2 === 0
-}
-
-console.log(isEven(4));
+console.log('end')
