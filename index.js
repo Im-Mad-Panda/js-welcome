@@ -64,21 +64,23 @@ sayHelloTo(userName);
 */
 
 
+/*Тернарный оператор
+условие ? если да : если нет
+*/
 
-const globalVar = 'test';
+// const number;
+// let result;
+// if (number > 5) {
+//     result = 'yes';
+// } else {
+//     result = 'no'
+// }
 
-debugger;
 
-if (globalVar){
-    const localVar = 10;
-    console.log(localVar);
-    console.log(globalVar);
-    console.log('true');
+// let result = (number > 5) ? 'yes' : 'no';
 
-    if (localVar){
-        const innerVar = true;
-    }
-} else {
-console.log('false');
-}
-console.log('end')
+const hour = 12;
+
+const theme = (hour >= 7 && hour <= 17) ? 'light' : 'dark';
+
+console.log(theme);
