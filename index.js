@@ -1,86 +1,24 @@
-// alert - модалка с сообщением;
-// prompt - модалка с импутом, куда можно ввести сообщение;
-// confirm - модалка с подтверждением или отменойж
+/*Else - if
 
-/*const inputValue1 = Number(prompt('Type first number'));
-const inputValue2 = Number(prompt('Type second number'));
-
-// let result = inputValue1 + inputValue2;
-
-// if(isNaN(result)){
-//     alert('not a number');
-// }else {
-//     alert(Number(result));
-// }
-
-let result;
-
-if(isNaN(inputValue1 + inputValue2)){
-    result = 'not a number';
-}else {
-    result = inputValue1 + inputValue2;
+if (услорвие){
+    else if (новое условие)
 }
 
-alert(result);
 */
 
 
-/*function имя_функции(параметры_функции){
-    тело функции
-}
-*/
+const number = +prompt('Type your number');
 
-
-/* Function Declaration:
-function имя_функции(параметры_функции){
-    тело_функции
-}
-
-Function Expression:
-const имя_функции = function (параметры){
-    тело функции
+if (isNaN(number)){
+    console.log('Некоректное число');
+} else if(number % 5 === 0){
+    console.log('Делится на 5')
+}else if(number % 3 === 0){
+    console.log('Делится на 3')
+}else if(number % 2 === 0){
+    console.log('Делится на 2')
+} else{
+    console.log('Не делиться не на 5 не на 3 не на 2')
 }
 
-Arrow Function:
-const имя_функции = (параметры) => {тело_функции}
-*/
-
-/* const userName = prompt('Your name, please?');
-
-const sayHelloTo = function(name){
-const alertText = 'Hello, ' + name;
-alert(alertText);
-}
-
-sayHelloTo(userName);
-*/
-
-
-/*if (условие) {
-  блок кода
-} else {
-  клок кода, который выполниться в противном случае
-}
-*/
-
-
-/*Тернарный оператор
-условие ? если да : если нет
-*/
-
-// const number;
-// let result;
-// if (number > 5) {
-//     result = 'yes';
-// } else {
-//     result = 'no'
-// }
-
-
-// let result = (number > 5) ? 'yes' : 'no';
-
-const hour = 12;
-
-const theme = (hour >= 7 && hour <= 17) ? 'light' : 'dark';
-
-console.log(theme);
+console.log('Конец скрипта')
