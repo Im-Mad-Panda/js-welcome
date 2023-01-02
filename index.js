@@ -36,7 +36,7 @@ if (option === 1) {
     конец
 }*/
 
-const userInput = prompt(
+/*const userInput = prompt(
   "Выборите позицию меню \n 1 - Чай \n 2 - Кофе \n 3 - Сок \n 4 - Лимонад \n 5 - Вода"
 );
 
@@ -58,4 +58,88 @@ switch (userInput) {
     break
   default:
     console.log("Такого нет в меню! Сорян)");
+}*/
+
+/*const number1 = +prompt("Первое число");
+const number2 = +prompt("Второе число");
+const operator = prompt("Выберети оператор: \n + \n - \n * \n /");
+
+
+function sum (a,b){
+  return a + b;
 }
+function sub (a,b){
+  return a - b;
+}
+function mult (a,b){
+  return a * b;
+}
+function div (a,b){
+  return a / b;
+}
+
+let res;
+
+switch (operator) {
+  case "+":
+    res = sum;
+    break
+  case "-":
+    res = sub;
+    break
+  case "*":
+    res = mult;
+    break
+  case "/":
+    res = div;
+    break
+}
+
+if(typeof res === 'function'){
+  const result = res(number1, number2)
+  console.log(result);
+} else {
+  console.log('Oppps!');
+  return null;
+}*/
+
+const getDecade = function (day) {
+  switch (day) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+      return 1;
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+      return 2;
+    case 21:
+    case 22:
+    case 23:
+    case 24:
+    case 25:
+    case 26:
+    case 27:
+    case 28:
+    case 29:
+    case 30:
+    case 31:
+      return 3;
+    default:
+      return null;
+  }
+};
