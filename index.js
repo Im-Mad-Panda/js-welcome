@@ -60,9 +60,13 @@ switch (userInput) {
     console.log("Такого нет в меню! Сорян)");
 }*/
 
-/*const number1 = +prompt("Первое число");
+const number1 = +prompt("Первое число");
 const number2 = +prompt("Второе число");
 const operator = prompt("Выберети оператор: \n + \n - \n * \n /");
+
+
+const res = calculate(number1, number2, operator);
+console.log(res);
 
 
 function sum (a,b){
@@ -78,32 +82,37 @@ function div (a,b){
   return a / b;
 }
 
-let res;
 
-switch (operator) {
+function calculate(num1, num2, userMode){
+let f;
+
+switch (userMode) {
   case "+":
-    res = sum;
-    break
+    f = sum;
+    break;
   case "-":
-    res = sub;
-    break
+    f = sub;
+    break;
   case "*":
-    res = mult;
-    break
+    f = mult;
+    break;
   case "/":
-    res = div;
-    break
+    f = div;
+    break;
 }
 
-if(typeof res === 'function'){
-  const result = res(number1, number2)
-  console.log(result);
+if(typeof f === 'function'){
+  const result = f(num1, num2)
+  return result;
 } else {
   console.log('Oppps!');
   return null;
-}*/
+}
+}
 
-const getDecade = function (day) {
+
+
+/*const getDecade = function (day) {
   switch (day) {
     case 1:
     case 2:
@@ -142,4 +151,4 @@ const getDecade = function (day) {
     default:
       return null;
   }
-};
+};*/
