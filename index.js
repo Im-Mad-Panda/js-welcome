@@ -99,11 +99,15 @@ const имя_функции = (параметры) => {тело_функции}
 */
 
 // function greeting(name)
-const greeting = function(name){
+/*const greeting = function(name){
 const checkedName = name ? name : 'Аноним';
 console.log('Привет, ' + checkedName);
 }
 
 const userName =prompt('Ведите ваше имя');
 
-greeting(userName);
+greeting(userName);*/
+
+(function sayHi(name){
+  console.log('Hi, ' + name);
+})('Masha');
