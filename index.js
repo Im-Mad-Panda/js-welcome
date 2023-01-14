@@ -1,84 +1,35 @@
-'use strict';
+"use strict";
 
-/* Function Declaration - видится с любой точки кода:
+const GOOD_PASSWORD = 'qwerty123';
 
-function имя_функции(параметры_функции){
-    тело_функции
-}
-Function Expression - можно вызвать только после ее обьявления:
+let MAX_TRY = 0;
 
-const имя_функции = function (параметры){
-    тело функции
-}
-Arrow Function:
+do {
+    const userInput = prompt('Введите свой пароль');
+    if(userInput === GOOD_PASSWORD)
+     break;
+} while(MAX_TRY++ > 5){
 
-const имя_функции = (параметры) => {тело_функции}
-*/
-
-// const number1 = +prompt("Первое число");
-// const number2 = +prompt("Второе число");
-// const operator = prompt("Выберети оператор: \n + \n - \n * \n /");
-
-// const res = calculate(number1, number2, operator);
-// console.log(res);
-
-
-function square(x){
-  const result = mult(x, x);
-  return result;
 }
 
 
-function sum(a, b) {
-  return a + b;
-}
-function sub(a, b) {
-  return a - b;
-}
-function mult(a, b) {
-  return a * b;
-}
-function div(a, b) {
-  return a / b;
-}
+/*while(MAX_TRY++ > 5){
+   const userInput = prompt('Введите свой пароль');
+   if(userInput === GOOD_PASSWORD){
+    break;
+   }
 
-// Callback - функцияб переданая как аргумент другой функции
-// Функция высшего порядка - функция принимающая на вход другие функции или
-// возвращающая функции в результате исполнения
+}*/
 
-function highOrderFunction(num1, num2, functionToPerform){
-const result = functionToPerform(num1, num2);
-return result;
-}
+console.log("ok");
 
-const res =highOrderFunction(3, 4, sum);
-console.log(res);
 
-// function calculate(num1, num2, userMode) {
-//   let f;
+// let count = 0;
 
-//   switch (userMode) {
-//     case "+":
-//       f = sum;
-//       break;
-//     case "-":
-//       f = sub;
-//       break;
-//     case "*":
-//       f = mult;
-//       break;
-//     case "/":
-//       f = div;
-//       break;
+// while (count < 10) {
+//   if (++count % 2 === 1) {
+//     continue;
 //   }
-
-//   if (typeof f === "function") {
-//     const result = f(num1, num2);
-//     return result;
-//   } else {
-//     console.log("Oppps!");
-//     return null;
-//   }
-}
-
-
+//   console.log(count);
+// }
+// console.log("!!!");
