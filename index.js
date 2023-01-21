@@ -1,53 +1,39 @@
 "use strict";
 
-// const MAX_TRY = 5;
+// function getSumOdd(from, to) {
+//   let sum = 0;
 
-// do {
-//     const userInput = prompt('Введите свой пароль');
-//     if(userInput === GOOD_PASSWORD)
-//      break;
-// } while(MAX_TRY++ > 5){
-
+//   for (let i = from; i <= to; i++) {
+//     if (i % 2 === 0) {
+//       sum = sum + i;
+//     }
+//   }
+//   return sum;
 // }
-
-// while(MAX_TRY++ > 5){
-//    const userInput = prompt('Введите свой пароль');
-//    if(userInput === GOOD_PASSWORD){
-//     break;
-//    }
-// }
-
-// for (Инициализация, условия, изменения на каждом шаге итерации){
-
-// }
+// const result = getSumOdd(3, 7);
+// console.log(result);
 
 
-function factorial(a){
+function factorial(number) {
 
-let result = 1;
+const MAX_TRY_FACTORIAL = 250;
 
-    for (let i = 1; i <= a; i++) {
-    result *= i;
-    
+if (isNaN(number)) {
+  return false;
+}
+if (number === 1 || number === 0) {
+  return 1;
+}
+if (number > MAX_TRY_FACTORIAL){
+  return false;
+}
+
+let result = 1n;
+
+  for (let i = 1; i <= number; i++) {
+    result *= BigInt(i);
   }
   return result;
 }
-
-const res = factorial(4);
-console.log(res);
-
-
-
-
-
-console.log("end of script");
-
-// let count = 0;
-
-// while (count < 10) {
-//   if (++count % 2 === 1) {
-//     continue;
-//   }
-//   console.log(count);
-// }
-// console.log("!!!");
+// const res = factorial(4);
+// console.log(res);
