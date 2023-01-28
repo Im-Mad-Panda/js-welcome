@@ -1,19 +1,30 @@
-"use strict";
 
-function Worker(name, surname, age, rate, days){
-  this.name = name;
-  this.surname = surname;
-  this.age = age;
-  this.rate = rate;
-  this.days = days;
-  this.getSalary = function(){
-if(isNaN(this.days) || isNaN(this.rate)){
-  return false;
+// const num1 = +prompt('Первое число');
+// const num2 = +prompt('Второе число');
+
+
+
+//  alert (num1 + ' + ' + num2 + ' = ' + (num1 + num2));
+
+//  'dfvsdfsdcv'
+//  "fgfgdf  "
+
+//  console.log(`Sum is ${2 + 2}`);
+
+number1 = 4;
+number2 = 5;
+
+
+function getDecription(){
+    return 'of these numders';
 }
-if(this.days > 31){
-  return null;
-}
-return this.rate * this.days;
-  }
-}
-const newWorker1 = new Worker('Daniil', 'Ondum', 29, 40, 30);
+
+
+alert(`Sum ${getDecription()}
+${number1} + ${number2} = ${number1 + number2}`);
+alert(`Sub ${getDecription()}
+${number1} - ${number2} = ${number1 - number2}`);
+alert(`Multiplication ${getDecription()}
+${number1} * ${number2} = ${number1 * number2}`);
+alert(`Division ${getDecription()}
+${number1} / ${number2} = ${number1 / number2}`);
