@@ -56,20 +56,38 @@
 
 // console.log(createQuery('/Im-Mad-Panda'));
 
-const user = {
-    'favorite color': 'green',
-    0: 'test',
+// const user = {
+//     'favorite color': 'green',
+//     0: 'test',
+// }
+
+// // user.favoriteColor;
+
+// user['Num'];
+
+// user[Num];
+
+// user['favorite color'];
+
+// const test = 'favorite color';
+
+// user[test]
+
+const weekPlan = {
+Пн: 'Визит к стоматологу',
+Вт: 'Свидание',
+Ср: 'Время провождение с друзьями',
+Чт: 'Трудный день на работе',
+Пт: 'Выходной',
+Сб: 'Поход в горы',
 }
 
-user.favoriteColor;
+function getPlanning(){
+    const dayWeek = prompt('Какой день недели: \nПн - Понедельник\nВт - Втортик\nСр - Среда\nЧт - Четверг\nПт - Пятница\nСб - Суббота');
 
-user['Num'];
+    // alert(weekPlan[dayWeek] ? weekPlan[dayWeek] : 'Ничего не запланировано на этот день');
 
-user[Num];
+    console.log('Привет' in weekPlan);
+}
 
-user['favorite color'];
-
-const test = 'favorite color';
-
-user[test]
-
+getPlanning();
