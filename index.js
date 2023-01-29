@@ -45,13 +45,31 @@
 // https://github.com/Im-Mad-Panda
 
 
-const PROTOCOL = 'http://';
-const SERVER_IP = 'github.com';
-// const PORT = '3000';
+// const PROTOCOL = 'http://';
+// const SERVER_IP = 'github.com';
+// // const PORT = '3000';
 
-function createQuery(absPath){
-    const url =`${PROTOCOL}${SERVER_IP}${absPath}`
-    return url;
+// function createQuery(absPath){
+//     const url =`${PROTOCOL}${SERVER_IP}${absPath}`
+//     return url;
+// }
+
+// console.log(createQuery('/Im-Mad-Panda'));
+
+const user = {
+    'favorite color': 'green',
+    0: 'test',
 }
 
-console.log(createQuery('/Im-Mad-Panda'));
+user.favoriteColor;
+
+user['Num'];
+
+user[Num];
+
+user['favorite color'];
+
+const test = 'favorite color';
+
+user[test]
+
