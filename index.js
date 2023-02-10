@@ -1,11 +1,35 @@
 'use strict'
 
-const userTest = {
-    0: '38099544545',
-    1: '38095457423',
-    2: '38066334521',
+function MyArray(){
+    this.length = 0;
+
+    for(let i = 0; i < arguments.length; i++){
+        if(isNaN(arguments[i])){
+            return
+        }
+        this.push(+arguments[i]);
+    }
+
 }
 
-const arrTest = new Array('38099544545', '38095457423', '38066334521');
+function MyProtoArray(){
 
-const arr =['test1', 'test2', 123456];
+    this.push = function(){  
+        for(let i = 0; i < arguments.length; i++){  
+        this[this.length++] = arguments[i];
+    }
+    return 
+}
+
+    this.pop = function(){ 
+        if(this.length === 0){
+            return;
+        }
+        
+        const delItem = this[this.length - 1];
+        delete this[--this.length];
+        return delItem;
+    }
+}
+
+MyArray.prototype = new MyProtoArray();
