@@ -1,37 +1,15 @@
 'use strict'
 
-const driver1 = {
-    name: 'Миша',
+function getAverage(){
+
+let sum = 0;
+
+for (let i = 0; i < arguments.length; i++) {
+sum += arguments[i];    
+}
+return (sum / arguments.length);
 }
 
-const driver2 = {
-    name: 'Саша',
-}
+const array = [2, 3, 4, 5, 6, 7];
 
-const car = {
-    go: function(){
-        return`${this.name} в этой машине`;
-    }
-}
-
-driver1.__proto__ = car;
-driver2.__proto__ = car;
-
-
-function Ladder() {
-    this.value = 0;
-    this.up = function(){
-        this.step++;
-        return this;
-    };
-    this.down = function(){
-        this.step--;
-        return this;
-        };
-    this.down = function(){
-        return this.value;
-        };
-}
-
- const ladder = new Ladder();
-
+console.log(getAverage(2, 3, 4, 5, 6, 7));
